@@ -5,7 +5,7 @@ class Application
     req = Rack::Request.new(env)
 
     if req.path==(/items/)
-      resp.write "Yay!"
+      resp.write "#{@@item.last.price}"
     else
       resp.write "Route not found"
       resp.status = 404
