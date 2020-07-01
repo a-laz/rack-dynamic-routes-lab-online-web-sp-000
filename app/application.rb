@@ -1,5 +1,5 @@
 class Application
-  @@item = [Item.new(:name => "Apple", :price => 1)]
+  @@item = []
   def call(env)
     resp = Rack::Response.new
     req = Rack::Request.new(env)
