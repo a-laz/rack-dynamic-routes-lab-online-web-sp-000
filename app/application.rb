@@ -6,6 +6,7 @@ class Application
     if req.path==(/items/)
       resp.write "Yay!"
     else
+      resp.write "Route not found"
       resp.status = 404
     end
     resp.finish
