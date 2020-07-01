@@ -8,6 +8,6 @@ class Application
     else
       resp.status = 404
     end
-  resp.finish
+    resp.finish
   end
 end
